@@ -102,10 +102,9 @@ public class MainActivity extends AppCompatActivity {
                         animalName = "Неизвестно";
                         break;
                 }
-
                 intent.putExtra("key", animalName);
                 startActivity(intent);
-                
+
             }
         });
     }
