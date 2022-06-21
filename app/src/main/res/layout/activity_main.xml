@@ -3,48 +3,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="8dp"
     android:orientation="vertical"
-    android:padding="14dp"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/animal_img"
+        android:id="@+id/pubg_img"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/dog" />
+        android:layout_marginTop="30dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:gravity="center">
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_dog"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#939191"
-            android:text="Собака"
+            android:id="@+id/btn_frown"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="26dp"
+            android:background="@drawable/shape"
+            android:text="@string/frown"
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/btn_cat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:backgroundTint="#939191"
-            android:text="Кошка"
+            android:id="@+id/btn_worn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/shape"
+            android:text="@string/worn"
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/btn_horse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#939191"
-            android:text="Конь"
+            android:id="@+id/btn_poseidon"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/shape"
+            android:text="@string/poseidon"
             android:textColor="@color/white" />
 
     </LinearLayout>
@@ -52,44 +54,49 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:gravity="center">
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_is_dog"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#EC8C68"
-            android:text="Это собака"
+            android:id="@+id/btn_is_frown"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="26dp"
+            android:background="@drawable/shape"
+            android:text="@string/Frown"
+            android:textColor="@color/white"
             android:textSize="12sp" />
 
         <Button
-            android:id="@+id/btn_is_cat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:backgroundTint="#EC8C68"
-            android:text="Это кошка"
+            android:id="@+id/btn_is_worn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/shape"
+            android:text="@string/Worn"
+            android:textColor="@color/white"
             android:textSize="12sp" />
 
         <Button
-            android:id="@+id/btn_is_horse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#EC8C68"
-            android:text="Это конь"
-            android:textSize="12sp" />
 
+            android:id="@+id/btn_is_poseidon"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/shape"
+            android:text="@string/Poseidon"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
     </LinearLayout>
 
     <Button
         android:id="@+id/next_screen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="80dp"
-        android:backgroundTint="#EC8C68"
-        android:text="Next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:text="@string/next"
         android:textColor="@color/white" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

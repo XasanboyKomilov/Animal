@@ -12,7 +12,7 @@ import com.example.animal.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-    private Animal animal;
+    private PubgMobile pubg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,34 +23,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initClicks() {
-        binding.btnCat.setOnClickListener(new View.OnClickListener() {
+        binding.btnFrown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                binding.animalImg.setImageResource(R.drawable.cat);
-                animal = Animal.CAT;
+                binding.pubgImg.setImageResource(R.drawable.frown);
+                pubg = PubgMobile.FROWN;
             }
         });
 
-        binding.btnDog.setOnClickListener(new View.OnClickListener() {
+        binding.btnWorn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                binding.animalImg.setImageResource(R.drawable.dog);
-                animal = Animal.DOG;
+                binding.pubgImg.setImageResource(R.drawable.worn);
+                pubg = PubgMobile.WORN;
             }
         });
 
-        binding.btnHorse.setOnClickListener(new View.OnClickListener() {
+        binding.btnPoseidon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                binding.animalImg.setImageResource(R.drawable.horse);
-                animal = Animal.HORSE;
+                binding.pubgImg.setImageResource(R.drawable.poseidon);
+                pubg = PubgMobile.POSEIDON;
             }
         });
 
-        binding.btnIsCat.setOnClickListener(new View.OnClickListener() {
+        binding.btnIsFrown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (animal == Animal.CAT) {
+                if (pubg == PubgMobile.FROWN) {
                     Toast.makeText(MainActivity.this, "Правильно!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Не верно))", Toast.LENGTH_SHORT).show();
@@ -58,10 +58,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        binding.btnIsDog.setOnClickListener(new View.OnClickListener() {
+        binding.btnIsWorn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (animal == Animal.DOG) {
+                if (pubg == PubgMobile.WORN) {
                     Toast.makeText(MainActivity.this, "Правильно!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Не верно))", Toast.LENGTH_SHORT).show();
@@ -69,10 +69,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        binding.btnIsHorse.setOnClickListener(new View.OnClickListener() {
+        binding.btnIsPoseidon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (animal == Animal.HORSE) {
+                if (pubg == PubgMobile.POSEIDON) {
                     Toast.makeText(MainActivity.this, "Правильно!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Не верно))", Toast.LENGTH_SHORT).show();
@@ -85,17 +85,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 String animalName;
-                switch (animal) {
-                    case CAT:
-                        animalName = "Кошка";
+                switch (pubg) {
+                    case FROWN:
+                        animalName = "Frown";
                         break;
 
-                    case DOG:
-                        animalName = "Собака";
+                    case WORN:
+                        animalName = "Worn";
                         break;
 
-                    case HORSE:
-                        animalName = "Лошадь";
+                    case POSEIDON:
+                        animalName = "Poseidon";
                         break;
 
                     default:
@@ -109,6 +109,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

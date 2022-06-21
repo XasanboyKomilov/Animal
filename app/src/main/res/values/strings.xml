@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Animal</string>
+    <string name="frown">Frown</string>
+    <string name="worn">worn</string>
+    <string name="poseidon">poseidon</string>
+    <string name="Frown">Это Frown</string>
+    <string name="Worn">Это Worn</string>
+    <string name="Poseidon">Это poseidon</string>
+    <string name="next">Next</string>
 </resources>
